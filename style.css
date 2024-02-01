@@ -5,6 +5,9 @@ body {
     color: black;
 }
 
+body,
+h1,
+h3,
 p,
 div {
     padding: 0;
@@ -21,6 +24,13 @@ header {
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px;
     font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    top: 0;
 }
 
 header.home {
@@ -28,29 +38,46 @@ header.home {
     color: white;
 }
 
-.home,
-.lasagna,
-.risotto,
-.carbonara {
-    padding-left: 10px;
+header.lasagna,
+header.carbonara,
+header.risotto {
+    background-color: yellow;
+    margin-top: 5px;
 }
 
 /* CONTENT */
 
 .content {
     font-size: 20px;
-    padding: 10px;
     border: solid;
     border-width: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 #home-img {
     background-color: rgb(148, 221, 255);
-    margin-bottom: 10px;
 }
 
 #recipes {
     background-color: rgb(176, 120, 228);
     color: black;
     margin-bottom: 20px;
+}
+
+.description {
+    background-color: rgb(250, 146, 108);
+}
+
+.ingredients {
+    background-color: darkseagreen;
+}
+
+.steps {
+    background-color: rgb(104, 72, 128);
+}
+
+footer {
+    background-color: black;;
+    color: #ffffff;
 }
