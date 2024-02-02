@@ -30,6 +30,7 @@ header {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 header.home {
@@ -47,43 +48,73 @@ header.risotto {
 
 .content-box {
     background-color: #ffffff;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     margin-top: 112px;
     padding-top: 15px;
+    z-index: 1;
 }
 
 .content {
     font-size: 20px;
     margin-bottom: 10px;
-    padding: 10px auto;
+    padding: 10px;
+    color: black;
 }
 
 #home-img {
     text-align: center;
-
 }
 
 #home-intro {
     color: black;
-    margin-bottom: 20px;
 }
 
 #home-recipes {
     list-style: none;
     display: flex;
-    padding: 15px;
+    flex-wrap: wrap;
 }
 
 .recipes-list {
-    display: inline-block;
-    margin: auto;
-    width: auto;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+}
+
+.recipes-fig {
+    margin: 0;
+}
+
+.recipes-fig-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.figcaption {
+    background-color: rgb(0, 0, 0, 0.644);
+    border-radius: 50%;
+    bottom: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 300px;
+    padding: 100px 0;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.figcaption:hover {
+    opacity: 1;
 }
 
 #home-disclaimer {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
+    text-align: center;
 }
 
 .description {
@@ -98,7 +129,7 @@ header.risotto {
     background-color: rgb(104, 72, 128);
 }
 
-footer {
+footer.content {
     background-color: black;;
-    color: #ffffff;
+    color: #fff;
 }
